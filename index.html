@@ -6,7 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
 
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.1/aframe/build/aframe-ar.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
@@ -18,7 +18,7 @@
                 <img id="githubLogo" src="assets/githubLogo.png">
                 <img id="linkedinLogo" src="assets/linkedinLogo.png">
             </a-assets>
-            <a-marker preset="hiro">
+            <a-marker type="pattern" url="pattern-marker.patt">
                 <a-text position="0 1.5 0" value="Lars Wefald" align="center" side="double"></a-text>
                 <a-box id="eBox" position="0 0.5 0" depth="1" height="1" width="1" src="#embriqE" click-event>
                     <a-animation attribute="rotation" dur="10000" fill="forwards" easing="linear" to="0 360 0" repeat="indefinite"></a-animation>
